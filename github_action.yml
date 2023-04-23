@@ -28,7 +28,7 @@ jobs:
           mentions: '@channel'
           fields: repo,message,commit,author,action,eventName,workflow,job,took
         env:
-          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK_URL: ${{https://hooks.slack.com/services/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 }}
 
 
 
