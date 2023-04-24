@@ -14,5 +14,5 @@ jobs:
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          channel: general
+          channel: laravel
           text: "Hello from GitHub Actions!"
