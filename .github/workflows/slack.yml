@@ -9,10 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Slack Message
-      - uses: actions/checkout@v2
       - uses: slack/webhook@v1
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
-          channel: laravel
+          channel: general
           text: "Hello from GitHub Actions!"
