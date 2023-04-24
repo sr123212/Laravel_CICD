@@ -9,7 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send Slack Message
-        uses: slack/webhook@v1
+      - uses: actions/checkout@v2
+      - uses: slack/webhook@v1
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
