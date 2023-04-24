@@ -10,13 +10,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      # additional steps to build and deploy your application
-
       - name: Notify Slack
         uses: slack/webhook@v1
         env:
-          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_WEBHOOK: ${{ secrets.https://hooks.slack.com/services/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 }}
         with:
           channel: laravel
           text: "Deployment successful!"
