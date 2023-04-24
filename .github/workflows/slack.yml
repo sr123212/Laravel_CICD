@@ -32,5 +32,5 @@ jobs:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
           channel: laravel
-          text: "Deployment successful!"
+          text: "pipeline success!"
 
