@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Slack Messenger
+        uses: joshmgross/send-slack-message@v1.0.2
+
       - name: Notify Slack
         uses: slack/webhook@v3
         env:
