@@ -27,6 +27,7 @@ jobs:
 
 
       - name: Notify Slack
+        uses: slack/webhook@v1
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
         with:
